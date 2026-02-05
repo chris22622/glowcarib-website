@@ -5,31 +5,15 @@ import { useState } from "react";
 
 // Screenshot data - update this array when adding new screenshots
 const screenshots = [
-  {
-    src: "/screenshots/app-01-splash.png",
-    alt: "CaribGlow Splash Screen",
-    caption: "Beautiful branded splash screen",
-  },
-  {
-    src: "/screenshots/app-01-welcome.png",
-    alt: "Welcome Screen",
-    caption: "Warm welcome experience",
-  },
-  {
-    src: "/screenshots/app-01-onboarding.png",
-    alt: "Onboarding Flow",
-    caption: "Easy onboarding process",
-  },
-  {
-    src: "/screenshots/app-02-onboarding.png",
-    alt: "Service Selection",
-    caption: "Choose your preferred services",
-  },
-  // Add more screenshots here as they are captured:
-  // { src: "/screenshots/app-03-search.png", alt: "Search Screen", caption: "Find beauty professionals" },
-  // { src: "/screenshots/app-04-map.png", alt: "Map View", caption: "See providers near you" },
-  // { src: "/screenshots/app-05-provider.png", alt: "Provider Profile", caption: "View provider details" },
-  // { src: "/screenshots/app-06-booking.png", alt: "Booking Flow", caption: "Book in seconds" },
+  { src: "/screenshots/app-01.png", alt: "CaribGlow Welcome", caption: "Welcome to CaribGlow" },
+  { src: "/screenshots/app-02.png", alt: "Explore Providers", caption: "Discover beauty providers" },
+  { src: "/screenshots/app-03.png", alt: "Provider Profile", caption: "View stunning portfolios" },
+  { src: "/screenshots/app-04.png", alt: "Service Details", caption: "Browse services & pricing" },
+  { src: "/screenshots/app-05.png", alt: "Book Appointment", caption: "Book in seconds" },
+  { src: "/screenshots/app-06.png", alt: "Your Bookings", caption: "Manage appointments" },
+  { src: "/screenshots/app-07.png", alt: "Messages", caption: "Chat with providers" },
+  { src: "/screenshots/app-08.png", alt: "Provider Dashboard", caption: "Manage your business" },
+  { src: "/screenshots/app-09.png", alt: "Provider Schedule", caption: "View your calendar" },
 ];
 
 export default function AppScreenshots() {
@@ -52,7 +36,7 @@ export default function AppScreenshots() {
         </div>
 
         {/* Main Featured Screenshot in Phone Frame */}
-        <div className="max-w-xs mx-auto mb-8">
+        <div className="max-w-sm md:max-w-md lg:max-w-lg mx-auto mb-8">
           <div className="relative aspect-[9/19.5] rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-gray-900 bg-gray-900">
             <Image
               src={screenshots[selectedIndex].src}
@@ -117,7 +101,7 @@ export function AppScreenshotsCompact() {
   return (
     <div className="py-8">
       {/* Main Screenshot */}
-      <div className="max-w-[200px] mx-auto mb-6">
+      <div className="max-w-[280px] mx-auto mb-6">
         <div className="relative aspect-[9/19.5] rounded-[1.5rem] overflow-hidden shadow-xl border-4 border-gray-900 bg-gray-900">
           <Image
             src={screenshots[selectedIndex].src}
