@@ -8,6 +8,7 @@ export default function Header() {
 
   const navLinks = [
     { href: "/", label: "Home" },
+    { href: "/app", label: "Get the App" },
     { href: "/about", label: "About" },
     { href: "/terms", label: "Terms" },
     { href: "/privacy", label: "Privacy" },
