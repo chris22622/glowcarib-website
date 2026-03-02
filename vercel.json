@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/p/:path*",
+      "destination": "https://caribglow-api.onrender.com/p/:path*"
+    }
+  ]
+}
